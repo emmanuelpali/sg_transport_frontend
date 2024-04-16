@@ -1,4 +1,4 @@
-![S & G Transport Desktop](/s_g_hero.png)
+![S & G Transport Desktop](/public/s_g_hero.png)
 
 # React + TypeScript + Vite
 
