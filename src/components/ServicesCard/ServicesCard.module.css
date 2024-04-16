@@ -1,0 +1,24 @@
+.service_container {
+    border-radius: 5rem;
+    border-top: 1px solid var(--secondary-color);
+    color: var(--tertiary-color);
+    margin: 1rem;
+}
+
+.service_container h1 {
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.description p {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    text-align: justify;
+    border-right: 1px solid var(--secondary-color);
+    border-radius: 5rem 0;
+    backdrop-filter: blur(5px);
+    background: transparent;
+}

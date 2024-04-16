@@ -1,0 +1,7 @@
+.word {
+    color:  var(--secondary-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+    backdrop-filter: blur(5px);
+}

@@ -1,0 +1,18 @@
+.section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    animation: fadeInAnimation cubic-bezier(0.175, 0.885, 0.32, 1.275) 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
