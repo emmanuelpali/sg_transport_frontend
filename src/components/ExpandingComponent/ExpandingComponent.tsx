@@ -30,7 +30,7 @@ const ExpandingComponent = ({ children, bcg }: { children: React.ReactNode } & E
   return (
     <div className={`${styles.expandContainer}`}>
       <div className={styles.innerContainer} style={{ width: `${width}%` , backgroundColor: bcg}}>
-        <div style={{backgroundColor: bcg}} className={`${styles.children} ${width > 10 ? styles.displayChildren : ''}`}>
+        <div style={{backgroundColor: bcg}} className={`${styles.children} ${width > 30 ? styles.displayChildren : ''}`}>
         {children}
         </div>
       </div>

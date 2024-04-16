@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Style from './Home.module.css'
 import ChangingWords from '../../components/ChangingWords/ChangingWords'
 import ExpandingComponent from '../../components/ExpandingComponent/ExpandingComponent'
@@ -7,7 +7,22 @@ import { ServicesCard } from '../../components/ServicesCard/ServicesCard'
 import services from '../../utils/data';
 
 const Home: React.FC = () => {
+	const [scrollY, setScrollY] = useState<number>(0);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			setScrollY(window.scrollY);
+		};
+
+		window.addEventListener('scroll', handleScroll);
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, [scrollY]);
+	console.log(scrollY);
 	return (
+		
 		<>
 			<main className={Style.main}>
 				<SgNavBar />
@@ -24,6 +39,7 @@ const Home: React.FC = () => {
 						Delivering your cargo with egg-ceptional care! <br />{' '}
 						<ChangingWords />
 					</p>
+					{scrollY < 3 && <p className={Style.hero_scroll_indicator}> &darr;</p>}
 				</div>
 				<ExpandingComponent bcg={'transparent'}>
 					<div className={Style.why_us}>

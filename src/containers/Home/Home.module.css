@@ -56,6 +56,24 @@
 	text-transform: capitalize;
 }
 
+.hero_scroll_indicator {
+	opacity: 0;
+	padding-top: 5vh;
+	animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 /* pure asthetics */
 .blue {
 	color: var(--secondary-color);
