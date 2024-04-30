@@ -1,7 +1,8 @@
 .service_container {
+    background-color: var(--tertiary-color);
     border-radius: 5rem;
     border-top: 1px solid var(--secondary-color);
-    color: var(--tertiary-color);
+    color: var(--main-bg-color);
     margin: 1rem;
 }
 

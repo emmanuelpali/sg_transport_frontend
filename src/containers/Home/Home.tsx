@@ -5,6 +5,7 @@ import ExpandingComponent from '../../components/ExpandingComponent/ExpandingCom
 import SgNavBar from '../../components/Navbar/SgNavBar'
 import { ServicesCard } from '../../components/ServicesCard/ServicesCard'
 import services from '../../utils/data';
+import Footer from '../../components/Footer/Footer'
 
 const Home: React.FC = () => {
 	const [scrollY, setScrollY] = useState<number>(0);
@@ -109,6 +110,7 @@ const Home: React.FC = () => {
 				<section>
 				</section>
 			</main>
+			<Footer />
 		</>
 	)
 }

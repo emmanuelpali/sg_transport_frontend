@@ -36,7 +36,7 @@
   display: grid;
   justify-content: center;
   animation: fade-in 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) forwards;
-  mix-blend-mode: normal;
+  mix-blend-mode: difference;
   backdrop-filter: blur(10px);
 }
 

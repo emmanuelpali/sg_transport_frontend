@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import styles from './SgNavBar.module.css';
+import { Link } from 'react-router-dom';
 
 const SgNavBar: React.FC = () => {
   const [collapse, setCollapse] = useState<boolean>(true)
@@ -34,9 +35,9 @@ const SgNavBar: React.FC = () => {
     <>
       <nav className={`navbar navbar-expand-lg ${styles.main_nav} ${showNav && styles.hide_nav} sticky-top`}>
         <div className={`container-fluid d-flex align-items-center `}>
-            <a className="navbar-brand me-auto" href="#"> {/* Use 'me-auto' to push the brand to the far left */}
+            <Link className="navbar-brand me-auto" to="/"> {/* Use 'me-auto' to push the brand to the far left */}
               <img className={` ${styles.logo}`} src="/logo-svg.svg" alt="logo" />
-            </a>
+            </Link>
             <button
             onClick={toggleCollapse}
               className={`navbar-toggler ms-auto ${styles.main_nav_toggle} ${collapse ? '' : styles.no_collapsed}`}
@@ -53,19 +54,19 @@ const SgNavBar: React.FC = () => {
            
             <ul className={`navbar-nav ms-auto mb-2 mb-lg-0 ${styles.navcontainer}`}> {/* Use 'ms-auto' to push the nav items to the right */}
               <li className="nav-item">
-                <a className={`nav-link ${styles.nav_a} `} aria-current="page" href="#">
+                <Link className={`nav-link ${styles.nav_a} `} aria-current="page" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className={`nav-link ${styles.nav_a}`} href="#">
+                <Link className={`nav-link ${styles.nav_a}`} to="/about">
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className={`nav-link ${styles.nav_a}`} href="#">
+                <Link className={`nav-link ${styles.nav_a}`} to="/services">
                   Services
-                </a>
+                </Link>
               </li>
             </ul>
             {!collapse && <button 
