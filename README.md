@@ -1,3 +1,8 @@
+![S & G Transport Desktop](/public/s_g_hero.png)
+![S & G Transport Desktop section](/public/s_g_why.png)
+![S & G Transport Mobile](/public/s_g_mobile_hero.png)
+![S & G Transport Mobile](/public/s_g_mobile.png)
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
